@@ -4,12 +4,24 @@ public class Building {
 	
 	String s;
 	
-	Floor[] floors = {new Floor(0),
-			          new Floor(1), 
-					  new Floor(2),
-					  new Floor(3),
-					  new Floor(4),
-					  new Floor(5)};
+	
+	
+	Floor[] floors;
+	Elevator elevator1;
+	Elevator elevator2;
+
+
+
+	public Building(Floor[] floors, Elevator ele1, Elevator ele2) {
+		//super();
+		//this.s = s;
+		this.floors = floors;
+		this.elevator1 = ele1;
+		this.elevator2 = ele2;
+		
+	}
+	
+	
 	
     
 

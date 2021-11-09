@@ -3,7 +3,7 @@ package elevatorSystem;
 public class ElevatorButton extends Button {
 
 	ElevatorButton(int floorNumber) {
-		super(floorNumber);
+		this.floorNumber=floorNumber;
 		// TODO Auto-generated constructor stub
 	}
 	

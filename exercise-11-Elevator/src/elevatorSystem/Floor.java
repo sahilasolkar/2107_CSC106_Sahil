@@ -3,17 +3,21 @@ package elevatorSystem;
 public class Floor {
 
 	int floor;
-	//public static String dir;
 	
-	Button[] floorbuttons = {new FloorButton("UP"), new FloorButton("DOWN")};
+	FloorButton floorbutton;
 	
 	public Floor(int floor)
 	{
 		this.floor = floor;
+		this.floorbutton = new FloorButton(floor);
+		System.out.println("floor"+floor+"created");
 	}
 	
-	public void print()
+	
+	public int getfloor()
 	{
-		System.out.println("this is a floor");
+		return floor;
 	}
+	
+	
 }

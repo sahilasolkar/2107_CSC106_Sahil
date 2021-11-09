@@ -3,18 +3,16 @@ package elevatorSystem;
 public abstract class Button {
 	
 	int floorNumber;
-	String direction;
+	String directionbtn1, directionbtn2;
 	
-	Button(String direction)
+	Button()
 	{
-		this.direction = direction;
+		this.directionbtn1="up";
+		this.directionbtn2="down";
+		
 		
 	}
 	
-	Button(int floorNumber)
-	{
-		this.floorNumber = floorNumber;
-		
-	}
+	
 
 }
